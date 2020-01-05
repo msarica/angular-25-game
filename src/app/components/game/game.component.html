@@ -1,0 +1,20 @@
+
+<div *ngFor="let row of group" >
+  <div *ngFor="let b of row" class="block">
+    <app-block
+    [block]='b'
+    ></app-block>
+  </div>
+</div>
+<hr>
+<div>
+  <input type="number" [(ngModel)]="size">
+  <button (click)="newGame()"> New Game </button>
+  <button (click)="help()"> {{ helpOn ? 'Help On': 'Help Off' }} </button>
+
+  <div *ngIf="result">
+    <h1>
+      {{result}}
+    </h1>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+.block2 {
+  height: 50px;
+  width: 50px;
+  background-color: blue;
+  contain: content;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.canSelect:hover {
+  background-color: orange;
+}
+
+.selected {
+  background-color: red;
+  font-size: x-large;
+  color: white;
+}
+
+.active {
+  background-color: orange;
+}
+
+.help {
+  background-color: blueviolet;
+}
